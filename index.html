@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Chart.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Metodos Númericos</title>
+</head>
+<body>
+    <h1>METODOS NÚMERICOS</h1>
+
+    <div class="contenedor">
+        <h3>AJUSTE MINIMOS CUADRADOS</h3>
+        <table border="1" class="table" id="tablaExponencial">
+            <thead class="thead-dark">
+              <tr>
+                <th>Xi</th>
+                <th>Yi</th>
+                <th>Xi^2</th>
+                <th>(Xi.Yi)</th>
+                <th>P(x)</th>
+                <th>error</th>
+              </tr> 
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+        <div class="contenedor-constantes">
+            <div class="constantes">
+                <h4>A1:</h4>
+                <p id="a1"></p>
+            </div>
+            <div class="constantes">
+                <h4>A0:</h4>
+                <p id="a0"></p>
+            </div>
+        </div>
+      
+        <div class="botones">
+            <button type="button" class="btnAgregar" onclick="agregarFila2()">Agregar Fila</button>
+            <button type="button" class="btnEliminar" onclick="eliminarFila2()">Eliminar Fila</button>
+        </div>
+        
+        <div class="calcular">
+            <button class="btnCalcular" onclick="capturar()">calcular</button>
+        </div>
+        
+    </div>
+
+    <div class="graficas">
+        <canvas id="grafica" width="400" height="400"></canvas>
+        <canvas id="grafica2" width="400" height="400"></canvas>
+    </div>
+
+    <script src="./Chart.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

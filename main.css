@@ -1,0 +1,147 @@
+body{
+    background-image: url('./imagenes/fondo.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+thead th, tfoot th, tfoot td {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.795));
+}
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+thead th, tfoot th {
+  font-family: 'Rock Salt', cursive;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+input {
+    width: 40px;
+    text-align: center;
+    border: none;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tr:nth-child(odd) {
+    background-color: #CCCCD2;
+}
+  
+tr:nth-child(even) {
+    background-color: #8F8F93;
+}
+
+table {
+    background-color: #CCCCD2;
+}
+h1 {
+    text-align: center;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btnAgregar {
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #299609;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btnEliminar {
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #E40B16;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.calcular {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btnCalcular {
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #299609;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button.selected {
+    border: none;
+}
+
+.contenedor-constantes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.constantes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#a0, #a1 {
+    margin-left: 5px;
+} 
+
+.graficas {
+    display: flex;
+    justify-content: center;
+}
+
+#grafica, #grafica2 {
+    background-color: rgba(255, 255, 255, 0.801);
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    .graficas {
+        flex-direction: column;
+    }
+    #grafica, #grafica2 {
+        margin-left: 0;
+    }
+    
+}
