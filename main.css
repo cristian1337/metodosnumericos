@@ -110,7 +110,8 @@ button.selected {
 
 .contenedor-constantes {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .constantes {
