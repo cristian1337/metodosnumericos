@@ -131,6 +131,9 @@ function capturar(){
                 data: Y
             }],
             labels: X
+        },
+        options: {
+            responsive: true
         }
     });
 

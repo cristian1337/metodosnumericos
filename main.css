@@ -129,6 +129,10 @@ button.selected {
     justify-content: center;
 }
 
+canvas#grafica, canvas#grafica2{
+    width: 48% !important;
+}
+
 #grafica, #grafica2 {
     background-color: rgba(255, 255, 255, 0.801);
     margin-bottom: 15px;
@@ -143,6 +147,9 @@ button.selected {
     }
     #grafica, #grafica2 {
         margin-left: 0;
+    }
+    canvas#grafica, canvas#grafica2{
+        width: 100% !important;
     }
     
 }
